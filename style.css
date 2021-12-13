@@ -1,0 +1,117 @@
+/* Inizio regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    margin: 30px 0 20px;
+}
+
+.row {
+    background-color: lightgray;
+    border: 15px solid lightgray;
+}
+/* Fine regole generali */
+
+/* Inizio regole quadrati */
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: 3s;
+}
+    /* UNO */
+.uno .square {
+    background-color: transparent;
+    border: 1px solid red;
+}
+
+.uno .square:hover {
+    background-color: red;
+}
+
+    /* DUE */
+.due .square:active {
+    width: 100%;
+}
+
+    /* TRE */
+.tre .square {
+    transition: 0.4s;
+}
+.tre .square:hover {
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+    /* QUATTRO */
+.quattro .square:hover {
+    opacity: 0;
+}
+
+    /* CINQUE */
+.row.cinque {
+    height: 130px;
+    position: relative;
+}
+
+.cinque .square {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-0%, -50%);
+    width: 60px;
+    height: 60px;
+}
+
+.cinque .square:hover {
+    width: 115px;
+    height: 115px;
+    left: 0;
+}
+
+.cinque .square:active {
+    width: 30px;
+    height: 30px;
+    left: 40px;
+}
+/* Fine regole quadrati */
+
+/* Inizio regole immagini */
+    /* SEI */
+.sei img:hover {
+    filter: grayscale(1);
+}
+
+    /* SETTE */
+.sette img:hover {
+    filter: sepia(80%) brightness(110%);
+    transition: 3s;
+}
+
+    /* OTTO */
+.otto img:hover {
+    filter: grayscale(70%) saturate(2);
+    border-radius: 15px;
+    transition: 2s;
+}
+
+    /* NOVE */
+.nove img {
+    scale: 0.7;
+}
+
+.nove img:hover {
+    scale: 1;
+    filter: grayscale(70%) saturate(2);
+    border-radius: 15px;
+    transition: 2s;
+}
+/* Fine regole immagini */
