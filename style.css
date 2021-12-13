@@ -8,10 +8,12 @@
 body {
     width: 80%;
     margin: auto;
+    font-family: Helvetica, sans-serif;
 }
 
 h2 {
     margin: 30px 0 20px;
+    font-weight: normal;
 }
 
 .row {
@@ -106,6 +108,7 @@ h2 {
     /* NOVE */
 .nove img {
     scale: 0.7;
+    transition: 2s;
 }
 
 .nove img:hover {
@@ -114,4 +117,96 @@ h2 {
     border-radius: 15px;
     transition: 2s;
 }
+
 /* Fine regole immagini */
+
+/* Inizio regole icone */
+.row i {
+    font-size: 50px;
+}
+    /* DIECI */
+.dieci i {
+    animation: spin 1s linear 0s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+    /* UNDICI */
+.undici i:hover {
+    animation: spin-two 1s linear 0s;
+}
+
+@keyframes spin-two {
+    0% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(250deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* Fine regole icone */
+
+/* Inizio regole pulsanti */
+.bottone {
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    border: 3px solid black;
+    position: relative;
+}
+
+.bottone a {
+    vertical-align: middle;
+    line-height: 100px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.bottone a:hover {
+    text-decoration: underline;
+    color: rgb(51, 32, 136);
+}
+
+.div-up {
+    position: absolute;
+    top: -3px;
+    left: 30px;
+    height: 3px;
+    width: 60px;
+    background-color: lightgray;
+}
+
+.div-down {
+    position: absolute;
+    bottom: -3px;
+    right: 30px;
+    height: 3px;
+    width: 60px;
+    background-color: lightgray;
+}
+
+.tredici {
+    margin-bottom: 100px;
+}
+
+    /* DODICI */
+.dodici .bottone:hover {
+    animation: bottone-uno 1s linear 0s;
+}
+
+@keyframes bottone-uno {
+    0% {
+
+    }
+}
