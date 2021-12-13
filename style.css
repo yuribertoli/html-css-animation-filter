@@ -178,7 +178,7 @@ h2 {
     color: rgb(51, 32, 136);
 }
 
-.div-up {
+.div-up-12, .div-up-13 {
     position: absolute;
     top: -3px;
     left: 30px;
@@ -187,7 +187,7 @@ h2 {
     background-color: lightgray;
 }
 
-.div-down {
+.div-down-12, .div-down-13 {
     position: absolute;
     bottom: -3px;
     right: 30px;
@@ -201,12 +201,21 @@ h2 {
 }
 
     /* DODICI */
-.dodici .bottone:hover {
-    animation: bottone-uno 1s linear 0s;
+.dodici .bottone:hover .div-up-12 {
+    animation: bottone-uno 2s ease 0s;
 }
 
 @keyframes bottone-uno {
     0% {
-
+        top: -3px;
+        left: 30px;
+    }
+    50% {
+        top: -3px;
+        left: calc(100% - 60px);
+    }
+    100% {
+        top: -3px;
+        left: 30px;
     }
 }
